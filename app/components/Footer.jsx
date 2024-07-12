@@ -17,7 +17,7 @@ const Footer = () => {
           <button className="p-[3px] relative mt-5">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-              REGISTER NOWW
+              REGISTER NOW
             </div>
           </button>
         </a>
@@ -28,7 +28,7 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          <div className="hidden justify-end md:mr-4 lg:mr-12 md:flex items-center">
+          <div className=" mt-5 justify-end md:mr-4 lg:mr-12 md:flex items-center">
             <ul className="flex space-x-8">
               <a href="https://x.com/NAshrapov" target="_blank">
                 <li>

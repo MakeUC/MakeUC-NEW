@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
 
-const myResume = "/images/NekruzAshrapovResume.pdf";
 const logo = "/images/logo.png";
 
 const navbar = () => {
@@ -103,18 +102,18 @@ const navbar = () => {
                 About
               </li>
             </Link>
-            <Link href="/#projects">
+            <Link href="/#Tracks">
               <li className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500">
                 Tracks
               </li>
             </Link>
-            <Link href="/#contact">
+            <Link href="/#FAQ">
               <li className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500">
                 FAQ
               </li>
             </Link>
             <a
-              href={myResume}
+              href="#"
               target="_blank"
               className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500"
             >
@@ -165,20 +164,20 @@ const navbar = () => {
               </div>
             </Link>
 
-            <Link href="/#projects">
+            <Link href="/#TRACK">
               <div className="flex flex-col items-center uppercase py-4 text-[17px] text-[#FFFFFFCC] transition-colors duration-500">
                 Track
               </div>
             </Link>
 
-            <Link href="/#contact">
+            <Link href="/#FAQ">
               <div className="flex flex-col items-center uppercase py-4 text-[17px] text-[#FFFFFFCC] transition-colors duration-500">
                 FAQ
               </div>
             </Link>
 
             <a
-              href={myResume}
+              href="#"
               target="_blank"
               className="mt-5 text-[#FFFFFFCC] uppercase text-[17px]"
             >

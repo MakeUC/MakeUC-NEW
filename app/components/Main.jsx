@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Main = () => {
   return (
-    <section className="relative flex min-h-[calc(100vh-70px)]">
+    <section id="home" className="relative flex min-h-[calc(100vh-70px)]">
       <div className="absolute h-full w-full hero-image -z-10" />
       <div className="flex flex-1 justify-center items-center md:-translate-y-[35px]">
         <div className="flex flex-col p-8 pt-48 md:flex-row justify-between items-center w-full max-w-7xl md:pt-8 gap-16">

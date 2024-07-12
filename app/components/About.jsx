@@ -11,9 +11,9 @@ const UCIEEELogo = "/images/uc-ieee-logo.png";
 
 const About = () => {
   return (
-    <div id="about" className='mt-20'>
+    <div id="about" className='mt-20 mb-10'>
       <h1 className="text-4xl font-bold mb-8 text-center">ABOUT</h1>
-      <div className="flex flex-col items-center sm:mx-20 md:mx-20 lg:mx-20 ">
+      <div className="flex flex-col items-center sm:mx-20 md:mx-40 ">
         <div className="card">
           MakeUC is a 24-hour hackathon hosted by IEEE at the University of
           Cincinnati. MakeUC was first held as a fully-online hackathon in the
