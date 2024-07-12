@@ -11,7 +11,7 @@ const UCIEEELogo = "/images/uc-ieee-logo.png";
 
 const About = () => {
   return (
-    <>
+    <div id="about">
       <h1 className="text-4xl font-bold mb-8 text-center">ABOUT</h1>
       <div className="flex flex-col items-center sm:mx-20 md:mx-20 lg:mx-20 ">
         <div className="card">
@@ -135,7 +135,7 @@ const About = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
