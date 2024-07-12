@@ -4,13 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
 
-import { FaLinkedin } from "react-icons/fa";
-import { SiDevpost } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdOutlineEmail } from "react-icons/md";
-
 const myResume = "/images/NekruzAshrapovResume.pdf";
+const logo = "/images/logo.png";
 
 const navbar = () => {
   const [nav, setNav] = useState(false);
@@ -47,7 +42,8 @@ const navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="flex justify-center md:ml-2 lg:ml-10 items-center">
           <Link href="/#home">
-            <svg
+            {
+              /* <svg
               id="hexagon"
               viewBox="0 0 100 100"
               fill="none"
@@ -86,7 +82,9 @@ const navbar = () => {
  L 89, 28 z"
                 />
               </g>
-            </svg>
+            </svg> */
+              <img src={logo} alt="logo" className="h-10 w-10"></img>
+            }
           </Link>
           {/* <Link href="/#home">
             <Image
@@ -107,12 +105,12 @@ const navbar = () => {
             </Link>
             <Link href="/#projects">
               <li className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500">
-                Projects
+                Tracks
               </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500">
-                Contact
+                FAQ
               </li>
             </Link>
             <a
@@ -120,7 +118,7 @@ const navbar = () => {
               target="_blank"
               className="ml-7 text-xs uppercase text-[#FFFFFFCC] hover:text-white transition-colors duration-500"
             >
-              Resume
+              Live Site
             </a>
           </ul>
 
@@ -137,54 +135,13 @@ const navbar = () => {
             </label>
           </div>
         </div>
-        <div className="hidden justify-end md:mr-4 lg:mr-12 md:flex items-center">
-          <ul className="flex space-x-8">
-            <a href="https://x.com/NAshrapov" target="_blank">
-              <li>
-                <FaXTwitter
-                  className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                  size={18}
-                />
-              </li>
-            </a>
-            <a href="https://www.linkedin.com/in/nekruzash/" target="_blank">
-              <li>
-                <FaLinkedin
-                  className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                  size={18}
-                />
-              </li>
-            </a>
-            <a href="https://github.com/NekruzAsh" target="_blank">
-              <li>
-                <FaGithub
-                  className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                  size={18}
-                />
-              </li>
-            </a>
 
-            <a
-              href="https://devpost.com/NekruzAsh?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-              target="_blank"
-            >
-              <li>
-                <SiDevpost
-                  className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                  size={18}
-                />
-              </li>
-            </a>
-            <a href="mailto:nekruzashrapov16@gmail.com" target="_blank">
-              <li>
-                <MdOutlineEmail
-                  className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                  size={18}
-                />
-              </li>
-            </a>
-          </ul>
-        </div>
+        <button className="p-[3px] relative mt-5 float-right">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+          <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+            LIVE SITE
+          </div>
+        </button>
       </div>
 
       <div
@@ -210,13 +167,13 @@ const navbar = () => {
 
             <Link href="/#projects">
               <div className="flex flex-col items-center uppercase py-4 text-[17px] text-[#FFFFFFCC] transition-colors duration-500">
-                Work
+                Track
               </div>
             </Link>
 
             <Link href="/#contact">
               <div className="flex flex-col items-center uppercase py-4 text-[17px] text-[#FFFFFFCC] transition-colors duration-500">
-                Contact
+                FAQ
               </div>
             </Link>
 
@@ -225,56 +182,8 @@ const navbar = () => {
               target="_blank"
               className="mt-5 text-[#FFFFFFCC] uppercase text-[17px]"
             >
-              Resume
+              Live Site
             </a>
-          </div>
-          <div className="flex justify-center mt-[-20px]">
-            <ul className="flex space-x-8">
-              <a href="https://x.com/NAshrapov" target="_blank">
-                <li>
-                  <FaXTwitter
-                    className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                    size={22}
-                  />
-                </li>
-              </a>
-              <a href="https://www.linkedin.com/in/nekruzash/" target="_blank">
-                <li>
-                  <FaLinkedin
-                    className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                    size={22}
-                  />
-                </li>
-              </a>
-              <a href="https://github.com/NekruzAsh" target="_blank">
-                <li>
-                  <FaGithub
-                    className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                    size={22}
-                  />
-                </li>
-              </a>
-
-              <a
-                href="https://devpost.com/NekruzAsh?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                target="_blank"
-              >
-                <li>
-                  <SiDevpost
-                    className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                    size={22}
-                  />
-                </li>
-              </a>
-              <a href="mailto:nekruzashrapov16@gmail.com" target="_blank">
-                <li>
-                  <MdOutlineEmail
-                    className="text-[#FFFFFFCC] hover:text-white transform duration-500"
-                    size={22}
-                  />
-                </li>
-              </a>
-            </ul>
           </div>
         </div>
       </div>

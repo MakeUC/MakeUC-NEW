@@ -11,13 +11,16 @@ export const metadata = {
 //components
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-
+import Footer from "./components/Footer";
+import About  from "./components/About";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
         <Main />
+        <About/>
+        <Footer/>
 
         {children}
       </body>
