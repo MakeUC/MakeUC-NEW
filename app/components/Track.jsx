@@ -15,11 +15,14 @@ const SocialIssuesImage = "/images/social-issues.png";
 
 export default function App() {
   return (
-    <div id="track">
+    <div
+      id="track"
+      className="mt-24 flex flex-col justify-center items-center w-full h-screen text-center"
+    >
       <h1 className="text-4xl font-bold mb-10 text-center">TRACK</h1>
 
-      <div className="grid  md:grid-cols-2 place-items-center gap-y-5 overflow-hidden">
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+      <div className="grid  md:grid-cols-2 place-items-center gap-y-5 gap-x-5 overflow-hidden">
+        <div className="card bg-base-100 image-full w-96  h-96 shadow-xl">
           <figure>
             <img src={GreenTechImage} alt="Green Tech Image" />
           </figure>
@@ -35,7 +38,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+        <div className="card bg-base-100 image-full w-96 h-96 shadow-xl">
           <figure>
             <img src={EducationImage} alt="Education Image" />
           </figure>
@@ -51,7 +54,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+        <div className="card bg-base-100 image-full w-96 h-96 shadow-xl">
           <figure>
             <img src={SocialIssuesImage} alt="Social Issue Image" />
           </figure>
@@ -67,12 +70,9 @@ export default function App() {
           </div>
         </div>
 
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+        <div className="card bg-base-100 image-full w-96 h-96 shadow-xl">
           <figure>
-            <img
-              src={SecurityImage}
-              alt="Security Image"
-            />
+            <img src={SecurityImage} alt="Security Image" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">Security</h2>

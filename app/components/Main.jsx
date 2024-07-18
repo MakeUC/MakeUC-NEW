@@ -1,8 +1,7 @@
 import React from "react";
 const MakeUCText = "/images/makeuc-text.png";
-const Logo = '/images/logo.png'
+const Logo = "/images/logo.png";
 import Link from "next/link";
-
 
 const Main = () => {
   return (
@@ -13,7 +12,7 @@ const Main = () => {
           <div>
             <img src={MakeUCText} alt="MakeUC" />
             <div className="text-muted-foreground text-xl mt-4">
-              November 4 - 5, 2023
+              November 4 - 5, 2024
             </div>
             <Link href="/live" passHref>
               <button className="p-[3px] relative mt-5">

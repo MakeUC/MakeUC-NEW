@@ -1,4 +1,3 @@
-
 import { FaLinkedin } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
@@ -7,11 +6,12 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 mt-24 pb-10" id="contact">
       {/* background grid */}
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to <span className="text-purple-500">HACK</span> to the next level?
+          Ready to <span className="text-purple-500">HACK</span> to the next
+          level?
         </h1>
         <a href="mailto:grovernt@mail.uc.edu">
           <button className="p-[3px] relative mt-5">
@@ -83,6 +83,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
