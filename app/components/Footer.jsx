@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6">
           <div className=" mt-5 justify-end md:mr-4 lg:mr-12 md:flex items-center">
             <ul className="flex space-x-8">
-              <a href="https://x.com/NAshrapov" target="_blank">
+              <a href="https://x.com/makeuc_io" target="_blank">
                 <li>
                   <FaSquareXTwitter
                     className="text-[#FFFFFFCC] hover:text-white transform duration-500"
@@ -38,7 +38,7 @@ const Footer = () => {
                   />
                 </li>
               </a>
-              <a href="https://www.linkedin.com/in/nekruzash/" target="_blank">
+              <a href="https://www.linkedin.com/company/makeuc" target="_blank">
                 <li>
                   <FaLinkedin
                     className="text-[#FFFFFFCC] hover:text-white transform duration-500"
@@ -46,7 +46,7 @@ const Footer = () => {
                   />
                 </li>
               </a>
-              <a href="https://github.com/NekruzAsh" target="_blank">
+              <a href="https://github.com/makeuc" target="_blank">
                 <li>
                   <FaGithub
                     className="text-[#FFFFFFCC] hover:text-white transform duration-500"
@@ -55,10 +55,7 @@ const Footer = () => {
                 </li>
               </a>
 
-              <a
-                href="https://devpost.com/NekruzAsh?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-                target="_blank"
-              >
+              <a href="https://makeuc-2023.devpost.com/" target="_blank">
                 <li>
                   <SiDevpost
                     className="text-[#FFFFFFCC] hover:text-white transform duration-500"
@@ -66,7 +63,7 @@ const Footer = () => {
                   />
                 </li>
               </a>
-              <a href="mailto:nekruzashrapov16@gmail.com" target="_blank">
+              <a href="mailto:info@makeuc.io" target="_blank">
                 <li>
                   <MdOutlineEmail
                     className="text-[#FFFFFFCC] hover:text-white transform duration-500"
